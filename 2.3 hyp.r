@@ -14,8 +14,8 @@ perform_t_test <- function(df1, df2) {
 
 }
 
-df_group_1 <- data %>% filter(Group=="Al-Shabaab", !is.na(Killed))
-df_group_2 <- data %>% filter(Group=="Boko Haram", !is.na(Killed))
+df_group_1 <- data %>% filter(Group=="Taliban", !is.na(Killed))
+df_group_2 <- data %>% filter(Group=="Islamic State of Iraq and the Levant (ISIL)", !is.na(Killed))
 test_3_result <- perform_t_test(df_group_1, df_group_2)
 
 cat("-- T-test Results --\n")
